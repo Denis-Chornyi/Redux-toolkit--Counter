@@ -1,6 +1,7 @@
 node_modules
 package-lock.json
-<<<<<<< HEAD
 build
-=======
->>>>>>> f720d60 (fix)
+.DS_Store
+build
+.vscode
+
