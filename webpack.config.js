@@ -6,7 +6,8 @@ const path = require('path');
 
 module.exports = (_, argv) => {
   const isProduction = argv.mode === 'production';
-  const config = {
+
+  return {
     entry: './src/index.jsx',
     output: {
       filename: 'bundle.js',
@@ -37,8 +38,15 @@ module.exports = (_, argv) => {
       new CleanWebpackPlugin(),
       new HtmlWebpackPlugin({
         template: './src/index.html'
-      })
-    ],
+      }),
+
+      !isProduction && new webpack.HotModuleReplacementPlugin(),
+
+      isProduction &&
+        new MiniCssExtractPlugin({
+          filename: '[name].css'
+        })
+    ].filter(Boolean),
     devServer: {
       historyApiFallback: true,
       open: true,
@@ -46,18 +54,4 @@ module.exports = (_, argv) => {
       port: 1080
     }
   };
-
-  if (isProduction) {
-    config.plugins.push(new webpack.HotModuleReplacementPlugin());
-  }
-
-  if (isProduction) {
-    config.plugins.push(
-      new MiniCssExtractPlugin({
-        filename: '[name].css'
-      })
-    );
-  }
-
-  return config;
 };
