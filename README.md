@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 # Project: Counter
 
 ### [GitHub Page]()
