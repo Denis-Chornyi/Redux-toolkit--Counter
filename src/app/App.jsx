@@ -1,5 +1,5 @@
 import React from 'react';
-import Counter from '../counter/Counter';
+import Counter from '../components/counter/Counter';
 import './app.scss';
 
 const App = () => {

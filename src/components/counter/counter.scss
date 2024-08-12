@@ -2,28 +2,29 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.counter__title {
-  font-style: italic;
-  font-size: 45px;
-  color: #f8bf30;
-  margin: 30px 0;
-  cursor: pointer;
-}
 
-.counter__button {
-  margin: 10px 0;
-  font-size: 20px;
-  outline: 0;
-  border: 2px solid #9200fb;
-  background-color: #000000;
-  color: #fff;
-  border-radius: 20px;
-  padding: 10px 0;
-  width: 280px;
-  cursor: pointer;
+  &__title {
+    font-style: italic;
+    font-size: 45px;
+    color: #f8bf30;
+    margin: 30px 0;
+    cursor: pointer;
+  }
 
-  &:hover {
-    border-color: #00c3ff;
+  &__button {
+    margin: 10px 0;
+    font-size: 20px;
+    outline: 0;
+    border: 2px solid #9200fb;
+    background-color: #000000;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px 0;
+    width: 280px;
+    cursor: pointer;
+
+    &:hover {
+      border-color: #00c3ff;
+    }
   }
 }
