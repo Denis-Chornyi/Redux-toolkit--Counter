@@ -1,6 +1,6 @@
 # Project: Counter
 
-## [GitHub Page](https://main--counter-toolkit.netlify.app/)
+### [GitHub Page](https://main--counter-toolkit.netlify.app/)
 
 ### The tech stack is:
 
